@@ -3,6 +3,9 @@
 #include <limits>
 
 using namespace std;
+//This program is, for all intents and purposes, just a calculator.
+//I wanted to make sure that it was polished, however, and made sure to include
+//Comprehensive error checking as to "cover all bases" so to speak
 
 //error checking method so i dont have to manually do it every time
 float promptFloat(const string& prompt) {
