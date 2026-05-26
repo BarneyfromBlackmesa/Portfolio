@@ -22,20 +22,20 @@ namespace Scenes.scripts
 
         void enemyGroundCheck()
         {
-            // Check if the character is on the ground
+            // check
             _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-            // Update the Animator with the ground state
+            // update the animator
             _animator.SetBool("isGrounded", _isGrounded);
 
-            // If grounded, reset isJumping to false
+            // if grounded, reset
             if (_isGrounded)
             {
                 _animator.SetBool("isJumping", false);
             }
         }
 
-        // Update is called once per frame
+        // Call this update once per frame to check for ground
         void Update()
         {
             enemyGroundCheck();
